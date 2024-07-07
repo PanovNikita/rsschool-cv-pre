@@ -3,9 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
   <title>Panov Nikita's CV</title>
 </head>
 <body>
+  <div class="wrapper">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about-section">About me</a></li>
+          <li><a href="#contacts-section">Contacts</a></li>
+          <li><a href="#languages-section">Languages</a></li>
+          <li><a href="#skills-section">Skills</a></li>
+          <li><a href="#code-section">Code Examples</a></li>
+          <li><a href="#education-section">Education</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    <main>
+      <h1 class="visually-hidden">CV of frontend developer Nikita Panov</h1>
+
+      <section id="about-section">
+        <h2>About Me</h2>
+        <img src="img/photo.jpg" alt="Panov Nikita" width="300" height="300">
+        <p>On average, people spend between two hours a day on the Internet. Websites have evolved to the point where they have turned from static pages into full-fledged applications. To me, it looks like magic. In that case, I want to be a wizard.</p>
+      </section>
+
+      <section id="contacts-section">
+        <h2>Contacts</h2>
+        <address>
+          <ul>
+            <li><b>Location: </b>Russia, Moscow Oblast, Korolyov</li>
+            <li><b>Telegram: </b><a href="https://t.me/panov_web">Nikita Panov</a></li>
+            <li><b>E-mail: </b><a href="mailto:nikita.panov2019@yandex.ru">nikita.panov2019@yandex.ru</a></li>
+            <li><b><a href="https://discord.gg/PRADsJB">RS School Discord: </a>@indar_dane</b></li>
+            <li><b>Github: </b><a href="https://github.com/PanovNikita">PanovNikita</a></li>
+          </ul>
+        </address>
+      </section>
+
+      <section id="languages-section">
+        <h2>Languages</h2>
+        <ul>
+          <li><b>English: </b>Starter (A0)</li>
+         <li><b>Russian: </b>Native</li>
+        </ul>
+      </section>
+
+      <section id="skills-section">
+        <h2>Skills</h2>
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>JavaScript</p>
+        <p>Git</p>
+      </section>
+
+      <section id="code-section">
+        <h2>Code examples</h2>
+        <p><b>Kata from </b><a href="https://www.codewars.com/">codewars</a>: Remove First and Last Character</p>
+        <pre>
+          <code>
+            function removeChar(str) {
+              return str.slice(1, -1);
+            }
+          </code>
+        </pre>
+      </section>
+
+      <section id="education-section">
+        <h2>Education</h2>
+        <ul>
+          <li>
+            <b><a href="https://rs.school/courses/javascript-preschool-ru">RS School - JavaScript / Front-end Pre-school Course </a></b> (in process)
+          </li>
+        </ul>
+      </section>
+
+      <section id="recent-section">
+        <h2>Recent works</h2>
+        <a href="https://panovnikita.github.io/rsschool-cv/cv">Markdown CV</a>
+      </section>
+
+    </main>
+    <footer>
+      <a href="https://github.com/PanovNikita">Github</a>
+      <p>2024</p>
+      <a href="https://rs.school/courses/javascript-preschool-ru">
+        <img src="https://raw.githubusercontent.com/rolling-scopes-school/tasks/34c6c5cbc96ec26fcfdb022d1a6f3b2641f0110c/tasks/cv/rs-school-logo.svg" alt="RSschool logo" width="250">
+      </a>
+    </footer>
+  </div>
 </body>
 </html>
