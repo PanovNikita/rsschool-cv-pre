@@ -3,10 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
   <title>Panov Nikita's CV</title>
 </head>
 <body>
+  <div class="wrapper">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about-section">About me</a></li>
+          <li><a href="#contacts-section">Contacts</a></li>
+          <li><a href="#languages-section">Languages</a></li>
+          <li><a href="#skills-section">Skills</a></li>
+          <li><a href="#code-section">Code Examples</a></li>
+          <li><a href="#education-section">Education</a></li>
+        </ul>
+      </nav>
+    </header>
   
+    <main>
+      <h1 class="visually-hidden">CV of frontend developer Nikita Panov</h1>
+
+      <section id="about-section">
+        <h2 class="header">About Me</h2>
+        <div class="about-section-wrapper">
+          <img src="img/photo.jpg" alt="Panov Nikita" width="300" height="300">
+          <p>On average, people spend between two hours a day on the Internet. Websites have evolved to the point where they have turned from static pages into full-fledged applications. To me, it looks like magic. In that case, I want to be a wizard.</p>
+        </div>
+      </section>
+
+      <section id="contacts-section">
+        <h2 class="header">Contacts</h2>
+        <address>
+          <ul>
+            <li><b>Location: </b>Russia, Moscow Oblast, Korolyov</li>
+            <li><b>Telegram: </b><a href="https://t.me/panov_web">Nikita Panov</a></li>
+            <li><b>E-mail: </b><a href="mailto:nikita.panov2019@yandex.ru">nikita.panov2019@yandex.ru</a></li>
+            <li><b><a href="https://discord.gg/PRADsJB">RS School Discord: </a>@indar_dane</b></li>
+            <li><b>Github: </b><a href="https://github.com/PanovNikita">PanovNikita</a></li>
+          </ul>
+        </address>
+      </section>
+
+      <section id="languages-section">
+        <h2 class="header">Languages</h2>
+        <ul>
+          <li><b>English: </b>Starter (A0)</li>
+         <li><b>Russian: </b>Native</li>
+        </ul>
+      </section>
+
+      <section id="skills-section">
+        <h2 class="header">Skills</h2>
+        <p class="skill skill-html">HTML</p>
+        <p class="skill skill-css">CSS</p>
+        <p class="skill skill-js">JavaScript</p>
+        <p class="skill skill-git">Git</p>
+      </section>
+
+      <section id="code-section">
+        <h2 class="header">Code examples</h2>
+        <p><b>Kata from </b><a href="https://www.codewars.com/">codewars</a>: Remove First and Last Character</p>
+        <pre>
+          <code>
+            function removeChar(str) {
+              return str.slice(1, -1);
+            }
+          </code>
+        </pre>
+      </section>
+
+      <section id="education-section">
+        <h2 class="header">Education</h2>
+        <ul>
+          <li>
+            <b><a href="https://rs.school/courses/javascript-preschool-ru">RS School - JavaScript / Front-end Pre-school Course </a></b> (in process)
+          </li>
+        </ul>
+      </section>
+
+      <section id="recent-section">
+        <h2 class="header">Recent works</h2>
+        <a href="https://panovnikita.github.io/rsschool-cv/cv">Markdown CV</a>
+      </section>
+
+    </main>
+    <footer>
+      <a href="https://github.com/PanovNikita">
+        <svg height="64" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="64" data-view-component="true" >
+          <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
+      </svg>
+      </a>
+      <p>2024</p>
+      <a href="https://rs.school/courses/javascript-preschool-ru">
+        <img src="https://raw.githubusercontent.com/rolling-scopes-school/tasks/34c6c5cbc96ec26fcfdb022d1a6f3b2641f0110c/tasks/cv/rs-school-logo.svg" alt="RSschool logo" width="250">
+      </a>
+    </footer>
+  </div>
 </body>
 </html>
