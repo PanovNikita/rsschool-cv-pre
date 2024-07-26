@@ -3,36 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/style.css">
   <title>Shelter</title>
 </head>
 <body>
-  <header class="main-header">
-    <a class="main-logo">
-      <img src="src/img/icons/main-logo.svg" width="184" height="60" alt="Cozy House logo">
-    </a>
-    <nav class="header-nav">
-      <ul>
-        <li><a href="#">About the shelter</a></li>
-        <li><a href="pets.html">Our pets</a></li>
-        <li><a href="">Help the shelter</a></li>
-        <li><a href="">Contacts</a></li>
-      </ul>
-    </nav>
-
-    <section class="not-only">
+  <div class="container">
+    <header class="main-header">
+        <a class="main-logo">
+          <img src="src/img/icons/main-logo.svg" width="184" height="60" alt="Cozy House logo">
+        </a>
+        <nav class="main-header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item"><a href="#" class="header-nav-link active">About the shelter</a></li>
+            <li class="header-nav-item"><a href="pets.html" class="header-nav-link">Our pets</a></li>
+            <li class="header-nav-item"><a href="#help-section" class="header-nav-link">Help the shelter</a></li>
+            <li class="header-nav-item"><a href="#main-footer" class="header-nav-link">Contacts</a></li>
+          </ul>
+        </nav>
+    </header>
+  </div>
+  <main>
+    <section class="not-only container">
       <h1 class="visually-hidden">Cozy House - Shelter for pets in Boston</h1>
       <h2>Not only people need a house</h2>
       <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
       <a href="#friends">Make a friend</a>
     </section>
 
-    <section class="about">
+    <section class="about container">
       <h2>About the shelter “Cozy House”</h2>
       <p>Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a family. The others will continue to live with us and will be waiting for a lucky chance to become dearly loved.</p>
       <p>We feed our wards with the best food and make sure that they do not get sick, feel comfortable (including psychologically) and well. We are supported by 87 volunteers and 28 employees of various skill levels. About 12% of the animals are taken by the shelter staff. Taking care of the animals, they become attached to the pets and would hardly ever leave them alone.</p>
     </section>
 
-    <section id="friends" class="our-friends">
+    <section id="friends" class="our-friends container">
       <h2>Our friends who are looking for a house</h2>
         <ul class="slider">
           <li>
@@ -53,9 +57,10 @@
         </ul>
         <button type="button" class="slider-prev">Previous</button>
         <button type="button" class="slider-next">Next</button>
+        <a href="pets.html">Get to know the rest</a>
     </section>
 
-    <section class="help">
+    <section id="help-section" class="help container">
       <h2>How you can help<br>
         our shelter</h2>
       <ul>
@@ -98,14 +103,14 @@
       </ul>
     </section>
 
-    <section class="in-addition">
+    <section class="in-addition container">
       <h2>You can also make a donation</h2>
       <p>Name of the bank / Type of bank account</p>
-      <p>8380 2880 8028 8791 7435</p>
+      <a>8380 2880 8028 8791 7435</a>
       <p>Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
     </section>
-
-    <footer class="main-footer">
+  </main>
+    <footer id="main-footer" class="main-footer container">
       <ul>
         <li>
           <p>For questions and suggestions</p>
@@ -115,12 +120,11 @@
         <li>
           <p>We are waiting for your visit</p>
           <address>
-            <p>1 Central Street, Boston (entrance from the store)</p>
-            <p>18 South Park, London</p>
+            <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.248082855322!2d-71.05730122324339!3d42.358551971193066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370868bc2ce7b%3A0x82fa7db94f5fea9e!2zMSBDZW50cmFsIFN0LCBCb3N0b24sIE1BIDAyMTA5LCDQodCo0JA!5e0!3m2!1sru!2sru!4v1721642852785!5m2!1sru!2sru" target="_blank">1 Central Street, Boston (entrance from the store)</a>
+            <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.0657351140712!2d-0.2050229063584926!3d51.42021909906586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487608baa7401b31%3A0x873a95ca58e122b2!2zU291dGggUGFyayBDb3VydCwgMTggUyBQYXJrIFJkLCBMb25kb24gU1cxOSA4VEQsINCS0LXQu9C40LrQvtCx0YDQuNGC0LDQvdC40Y8!5e0!3m2!1sru!2sru!4v1721642929273!5m2!1sru!2sru" target="_blank">18 South Park, London</a>
           </address>
         </li>
       </ul>
     </footer>
-  </header>
 </body>
 </html>
