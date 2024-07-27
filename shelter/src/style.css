@@ -127,6 +127,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: space-between;
   margin: 0;
+  margin-top: -8px;
   margin-left: auto;
   padding: 0;
   list-style: none;
@@ -213,13 +214,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .slider-prev {
   background: url("img/icons/arrow-left.svg") no-repeat center center;
-  bottom: 312px;
+  bottom: 402px;
 }
 
 .slider-next {
   background: url("img/icons/arrow-right.svg") no-repeat center center;
   right: 40px;
-bottom: 312px;
+bottom: 402px;
 }
 
 .card {
@@ -348,4 +349,69 @@ bottom: 312px;
   line-height: 150%;
   color: var(--color-dark-m);
   letter-spacing: normal;
+}
+
+.main-footer {
+  padding-top: 23px;
+  padding-bottom: 19px;
+  background-image: url("img/content/footer-puppy.png") ,url("img/content/footer-gradient-background.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 40px bottom, center center;
+  background-size: auto, cover;
+}
+
+.footer-heading {
+  color: var(--color-light-xl);
+  margin-bottom: 40px;
+}
+
+.main-footer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.main-footer-list-item {
+  width: 300px;
+}
+
+.main-footer-list-item:first-child {
+  margin-right: 139px;
+}
+
+.footer-link {
+  display: block;
+  margin-bottom: 40px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.footer-email {
+  margin-bottom: 46px;
+  padding-left: 61px;
+  background: url("img/icons/icon-email.svg") no-repeat center left;
+}
+
+.footer-tel {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 61px;
+  background: url("img/icons/icon-phone.svg") no-repeat center left;
+}
+
+.footer-address {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-top: -12px;
+  padding-left: 41px;
+  font-style: normal;
+  background: url("img/icons/icon-marker.svg") no-repeat center left;
 }
