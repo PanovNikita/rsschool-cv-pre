@@ -59,11 +59,17 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 130%;
   letter-spacing: 0.06em;
   text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 .button-dark {
   color: var(--color-dark-3xl);
   background-color: var(--color-primary);
+  transition: background-color 0.3s ease;
+}
+
+.button-dark:hover {
+  background-color: var(--color-primary-light);
 }
 
 .button-light {
@@ -469,6 +475,11 @@ bottom: 402px;
   letter-spacing: 0.06em;
   color: var(--color-primary);
   text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--color-primary-light);
 }
 
 .footer-email {
@@ -547,6 +558,11 @@ bottom: 402px;
   text-align: center;
   cursor: pointer;
   font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.navigation button:hover:not([disabled]) {
+  background-color: var(--color-primary);
 }
 
 .navigation button[disabled] {
