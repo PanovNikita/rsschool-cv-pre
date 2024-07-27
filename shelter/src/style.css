@@ -21,8 +21,14 @@ body {
   margin: 0;
 }
 
-.not-only {
-  color: red;
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 .container {
@@ -31,9 +37,70 @@ body {
   margin: 0 auto;
 }
 
+.basic-text {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: var(--color-dark-s);
+}
+
+.button {
+  border-radius: 100px;
+  padding: 15px 45px;
+  height: 52px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+}
+
+.button-dark {
+  color: var(--color-dark-3xl);
+  background: var(--color-primary);
+}
+
+.not-only {
+  position: relative;
+  padding-top: 308px;
+  padding-bottom: 257px;
+  background: burlywood url("img/content/start-screen-gradient-background.jpg") no-repeat center / cover;
+}
+
+.not-only-content {
+  width: 460px;
+}
+
+.not-only-heading {
+  margin-bottom: 42px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 130%;
+  color: var(--color-light-xl);
+}
+
+.not-only .basic-text {
+  margin-bottom: 56px;
+  color: var(--color-dark-s);
+}
+
+.not-only-img {
+  position: absolute;
+  bottom: 0;
+  right: 37px;
+}
+
 .main-header {
-  display: grid;
-  grid-template-columns: 184px 1fr;
+  position: absolute;
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 30px 0;
 }
 
 .header-nav-list {
