@@ -81,10 +81,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .not-only {
-  position: relative;
   padding-top: 344px;
-  padding-bottom: 257px;
   background: burlywood url("img/content/start-screen-gradient-background.jpg") no-repeat center / cover;
+}
+
+.not-only .container {
+  position: relative;
+  padding-bottom: 257px;
 }
 
 .not-only-content {
@@ -169,6 +172,10 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
+.header-nav-link:hover {
+  color: var(--color-light-s);
+}
+
 .header-nav-link.active {
   color: var(--color-light-s);
 }
@@ -201,6 +208,10 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-dark-l);
 }
 
+.header-pets .header-nav-link:hover {
+  color: var(--color-dark-3xl);
+}
+
 .header-pets .header-nav-link.active {
   color: var(--color-dark-3xl);
 }
@@ -229,8 +240,11 @@ h1, h2, h3, h4, h5, h6 {
 .our-friends {
   position: relative;
   padding-top: 80px;
-  padding-bottom: 100px;
   background-color: var(--color-light-l);
+}
+
+.our-friends .container {
+  padding-bottom: 100px;
 }
 
 .our-friends-heading {
@@ -348,7 +362,6 @@ bottom: 402px;
 
 .donation {
   padding-top: 80px;
-  padding-bottom: 87px;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 15px;
@@ -356,7 +369,12 @@ bottom: 402px;
   letter-spacing: 0.06em;
   color: var(--color-dark-l);
 
-  background: var(--color-light-l) url("img/content/donation-dog.png") no-repeat 182px 90px;
+  background-color: var(--color-light-l);
+}
+
+.donation .container {
+  padding-bottom: 87px;
+  background: url("img/content/donation-dog.png") no-repeat 182px 8px;
 }
 
 .donation-content {
@@ -398,11 +416,15 @@ bottom: 402px;
 
 .main-footer {
   padding-top: 23px;
+  background-image: url("img/content/footer-gradient-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.main-footer .container {
   padding-bottom: 19px;
-  background-image: url("img/content/footer-puppy.png") ,url("img/content/footer-gradient-background.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: right 40px bottom, center center;
-  background-size: auto, cover;
+  background: url("img/content/footer-puppy.png") no-repeat right 40px bottom;
 }
 
 .footer-heading {
@@ -464,8 +486,11 @@ bottom: 402px;
 .our-pets {
   margin-top: 120px;
   padding-top: 80px;
-  padding-bottom: 96px;
   background-color: var(--color-light-l);
+}
+
+.our-pets .container {
+  padding-bottom: 100px;
 }
 
 .our-pets-heading {
