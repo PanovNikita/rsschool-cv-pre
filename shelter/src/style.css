@@ -123,6 +123,27 @@ h1, h2, h3, h4, h5, h6 {
   padding: 30px 0;
 }
 
+.main-logo p:first-child {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: var(--color-primary);
+}
+
+.main-logo p:last-child {
+  margin: 0;
+  margin-left: 5px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: var(--color-light-xl);
+}
+
 .header-nav-list {
   width: 443px;
   display: flex;
@@ -163,6 +184,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Стили для страницы питомцев */
+
+.header-pets .main-logo {
+  text-decoration: none;
+}
+
+.header-pets .main-logo p:first-child {
+  color: var(--color-dark-l);
+}
+
+.header-pets .main-logo p:last-child {
+  color: var(--color-dark-3xl);
+}
 
 .header-pets .header-nav-link{
   color: var(--color-dark-l);
