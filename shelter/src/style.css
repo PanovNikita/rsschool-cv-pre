@@ -15,6 +15,7 @@
 
   --font-family: "Georgia", sans-serif;
   --second-family: "Arial", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -290,6 +291,15 @@ bottom: 402px;
   width: 270px;
   background-color: var(--color-light-s);
   box-sizing: border-box;
+}
+
+.card:hover .button {
+  background: var(--color-primary-light);
+  border: none;
+}
+
+.card a {
+  text-decoration: none;
 }
 
 .card-text {
