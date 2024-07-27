@@ -268,7 +268,9 @@ h1, h2, h3, h4, h5, h6 {
   list-style-type: none;
 }
 
-.our-friends button {
+.our-friends .slider-prev,
+.our-friends .slider-next
+ {
   position: absolute;
   width: 52px;
   height: 52px;
@@ -276,6 +278,12 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 100px;
   border: 2px solid var(--color-primary);
   background-color: inherit;
+  transition: background-color 0.3s ease;
+}
+
+.our-friends .slider-prev:hover,
+.our-friends .slider-next:hover {
+  background-color: var(--color-primary-light);
 }
 
 .slider-prev {
@@ -286,7 +294,7 @@ h1, h2, h3, h4, h5, h6 {
 .slider-next {
   background: url("img/icons/arrow-right.svg") no-repeat center center;
   right: 40px;
-bottom: 402px;
+  bottom: 402px;
 }
 
 .card {
