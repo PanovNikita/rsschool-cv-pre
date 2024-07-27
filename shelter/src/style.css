@@ -52,7 +52,6 @@ h1, h2, h3, h4, h5, h6 {
 .button {
   border-radius: 100px;
   padding: 15px 45px;
-  height: 52px;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 17px;
@@ -63,7 +62,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .button-dark {
   color: var(--color-dark-3xl);
-  background: var(--color-primary);
+  background-color: var(--color-primary);
+}
+
+.button-light {
+  background-color: var(--color-light-s);
+  color: var(--color-dark-3xl);
+  border: 2px solid var(--color-primary);
 }
 
 .section-heading {
@@ -156,7 +161,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .about {
   padding-top: 94px;
-  padding-bottom: 114px;
+  padding-bottom: 90px;
   background: #fff url("img/content/about-pets.png") no-repeat 216px 81px;
 }
 
@@ -173,4 +178,82 @@ h1, h2, h3, h4, h5, h6 {
 .about .basic-text {
   margin-bottom: 25px;
   color: var(--color-dark-xl);
+}
+
+.our-friends {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background-color: var(--color-light-l);
+}
+
+.our-friends-heading {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.slider {
+  width: 990px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 60px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.our-friends button {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  font-size: 0;
+  border-radius: 100px;
+  border: 2px solid var(--color-primary);
+  background-color: inherit;
+}
+
+.slider-prev {
+  background: url("img/icons/arrow-left.svg") no-repeat center center;
+  bottom: 312px;
+}
+
+.slider-next {
+  background: url("img/icons/arrow-right.svg") no-repeat center center;
+  right: 40px;
+bottom: 312px;
+}
+
+.card {
+  text-align: center;
+  border-radius: 9px;
+  /* padding: 30px 35px; */
+  padding-top: 0;
+  width: 270px;
+  background-color: var(--color-light-s);
+  box-sizing: border-box;
+}
+
+.card-text {
+  padding: 0 35px 44px;
+}
+
+.card-img {
+  margin-bottom: 23px;
+  max-width: 100%;
+  height: auto;
+}
+
+.card-title {
+  margin-bottom: 46px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--color-dark-l);
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
