@@ -284,6 +284,7 @@ h1, h2, h3, h4, h5, h6 {
 .our-friends .slider-prev:hover,
 .our-friends .slider-next:hover {
   background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
 }
 
 .slider-prev {
@@ -305,6 +306,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 270px;
   background-color: var(--color-light-s);
   box-sizing: border-box;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 
 .card:hover .button {
