@@ -177,6 +177,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 160%;
   color: var(--color-dark-s);
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .header-nav-link:hover {
@@ -245,12 +246,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .our-friends {
-  position: relative;
   padding-top: 80px;
   background-color: var(--color-light-l);
 }
 
 .our-friends .container {
+  position: relative;
   padding-bottom: 100px;
 }
 
