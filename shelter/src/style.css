@@ -204,6 +204,14 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
+.header-pets .main-logo p {
+  transition: color 0.3s ease;
+}
+
+.header-pets .main-logo:hover p {
+  color: var(--color-dark-3xl) !important;
+}
+
 .header-pets .main-logo p:first-child {
   color: var(--color-dark-l);
 }
@@ -280,6 +288,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid var(--color-primary);
   background-color: inherit;
   transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
 .our-friends .slider-prev:hover,
@@ -435,6 +444,12 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
+  transition: background-color 0.3s ease;
+}
+
+.donation-card:hover {
+  background-color: var(--color-primary-light);
+  cursor: pointer;
 }
 
 .donation-copyright {
