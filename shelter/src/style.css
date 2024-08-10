@@ -212,6 +212,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   bottom: 0;
   right: 37px;
+  height: auto;
 }
 
 /* Стили для страницы питомцев */
@@ -623,7 +624,47 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: -8px;
 }
 
-/*================== Adaptive 768px ==================*/
+/*================== Adaptive  ==================*/
+
+@media (max-width: 1279px) {
+  .not-only {
+    padding-top: 151px;
+  }
+
+  .not-only .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px;
+    padding-bottom: 0;
+  }
+
+  .not-only-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 65%;
+  }
+
+  .not-only-heading, .not-only .basic-text {
+    padding: 0;
+    margin: 0;
+  }
+
+  .not-only-link {
+    align-self: center;
+  }
+
+  .not-only-img {
+    position: static;
+    align-self: center;
+    width: 569px;
+    align-self: end
+  }
+}
 
 @media (max-width: 768px) {
   .container {
@@ -666,6 +707,32 @@ h1, h2, h3, h4, h5, h6 {
 
   .header-nav-link {
     font-size: 32px;
+  }
+}
+
+@media (max-width: 620px) {
+  .not-only-img {
+    width: 260px;
+  }
+}
+
+@media (max-width: 535px) {
+  .not-only .container {
+    gap: 107px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .not-only-heading {
+    font-size: 25px;
+    letter-spacing: 0.06em;
+  }
+  .not-only-content {
+    text-align: center;
+    width: 100%;
+  }
+
+  .not-only .basic-text {
+    font-size: 15px;
   }
 }
 
