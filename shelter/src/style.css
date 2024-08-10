@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 50%;
   z-index: 1;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1280px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -250,15 +250,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
   padding-top: 94px;
   padding-bottom: 90px;
-  background: #fff url("img/content/about-pets.png") no-repeat 216px 81px;
+}
+
+.about-img {
+  margin-top: -13px;
 }
 
 .about-content {
-  width: 430px;
-  margin-left: auto;
-  padding-right: 176px;
+  max-width: 430px;
 }
 
 .about-heading {
@@ -631,14 +635,17 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 151px;
   }
 
+  .not-only .container, .container {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px;
+  }
+
   .not-only .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 100px;
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 1200px;
     padding-bottom: 0;
   }
 
@@ -668,13 +675,23 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   .container {
-    width: 708px;
+    max-width: 708px;
     padding: 0 30px;
   }
 
   .main-header {
     padding: 30px;
   }
+
+  .about {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 66px;
+    padding-top: 83px;
+    padding-bottom: 98px;
+  }
+  
+
 }
 
 @media (max-width: 767px) {
@@ -733,6 +750,29 @@ h1, h2, h3, h4, h5, h6 {
 
   .not-only .basic-text {
     font-size: 15px;
+  }
+
+  .about {
+    padding-top: 43px;
+    padding-right: 25px;
+    padding-bottom: 100px;
+    padding-left: 25px;
+  }
+
+  .about-content {
+    text-align: justify;
+    gap: 25px;
+  }
+
+  .about-heading {
+    letter-spacing: 0.06em;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .about-img {
+    width: 260px;
+    height: auto;
   }
 }
 
