@@ -423,7 +423,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .help-list p {
   margin-bottom: 0;
-  white-space: nowrap;
 }
 
 .help-list img {
@@ -445,10 +444,11 @@ h1, h2, h3, h4, h5, h6 {
 .donation .container {
   display: flex;
   justify-content: flex-end;
-  padding-bottom: 87px;
+  padding-bottom: 91px;
 }
 
 .donation-img {
+  margin-top: 10px;  
   height: auto;
 }
 
@@ -513,19 +513,17 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 40px;
 }
 
-.main-footer ul {
+.main-footer-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
   display: flex;
+  width: 62%;
+  justify-content: space-between;
 }
 
 .main-footer-list-item {
   width: 300px;
-}
-
-.main-footer-list-item:first-child {
-  margin-right: 139px;
 }
 
 .footer-link {
@@ -700,6 +698,29 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 0;
     margin-left: 0;
   }
+
+  .donation-img {
+    margin-top: 0;
+  }
+
+  .main-footer {
+    padding-top: 33px;
+  }
+
+  .main-footer .container {
+    padding-bottom: 333px;
+    background-position: center bottom;
+  }
+
+  .main-footer-list {
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .footer-heading {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -797,7 +818,16 @@ h1, h2, h3, h4, h5, h6 {
     width: 260px;
   }
 
+  .main-footer-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
 
+  .footer-heading {
+    text-align: center;
+    font-size: 25px;
+  }
 }
 
 @media (max-width: 535px) {
@@ -904,6 +934,7 @@ h1, h2, h3, h4, h5, h6 {
   .help-list p {
     margin-top: 5px;
     font-size: 15px;
+    white-space: nowrap;
   }
 
   .help-list img {
@@ -951,6 +982,32 @@ h1, h2, h3, h4, h5, h6 {
 
   .donation-copyright {
     text-align: justify;
+  }
+
+  .main-footer .container {
+    background-size: 260px;
+    padding-bottom: 283px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .footer-heading {
+    width: 90%;
+  }
+
+  .main-footer-list {
+    gap: 0;
+  }
+
+  .main-footer-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-link:nth-child {
+    margin-bottom: 0;
+    text-align: center;
   }
 }
 
