@@ -389,7 +389,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .help {
   padding-top: 80px;
-  padding-bottom: 66px;
+  padding-bottom: 85px;
   background-color: var(--color-light-xl);
   text-align: center;
 }
@@ -443,13 +443,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .donation .container {
+  display: flex;
+  justify-content: flex-end;
   padding-bottom: 87px;
-  background: url("img/content/donation-dog.png") no-repeat 182px 8px;
+}
+
+.donation-img {
+  height: auto;
 }
 
 .donation-content {
   width: 380px;
-  margin-left: auto;
+  margin-left: 30px;
   margin-right: 142px;
 }
 
@@ -684,6 +689,17 @@ h1, h2, h3, h4, h5, h6 {
   .card:nth-child(3) {
     display: none;
   }
+
+  .donation .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .donation-content {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -720,7 +736,14 @@ h1, h2, h3, h4, h5, h6 {
   .help-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    
+  }
+
+  .donation .container {
+    gap: 45px;
+  }
+
+  .donation-img {
+    max-width: 505px;
   }
 }
 
@@ -773,6 +796,8 @@ h1, h2, h3, h4, h5, h6 {
   .not-only-img {
     width: 260px;
   }
+
+
 }
 
 @media (max-width: 535px) {
@@ -807,9 +832,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .about-heading {
-    /* letter-spacing: 0.06em; */
     text-align: center;
-    /* font-size: 25px; */
   }
 
   .about-img {
@@ -861,7 +884,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .help {
     padding-top: 42px;
-    padding-bottom: 42px;
+    padding-bottom: 20px;
   }
 
   .help.container {
@@ -886,6 +909,48 @@ h1, h2, h3, h4, h5, h6 {
   .help-list img {
     width: 50px;
     height: 50px;
+  }
+
+  .donation {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+
+  .donation .container {
+    gap: 30px;
+    padding-right: 20px;
+    padding-bottom: 0;
+    padding-left: 20px;
+  }
+
+  .donation-img {
+    max-width: 260px;
+  }
+
+  .donation-content {
+    width: 100%;
+  }
+  
+  .donation-heading {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .donation-bank {
+    line-height: 160%;
+    letter-spacing: normal;
+  }
+
+  .donation-card {
+    line-height: 110%;
+    font-size: 15px;
+    padding-top: 13px;
+    padding-right: 14px;
+    padding-bottom: 13px;
+  }
+
+  .donation-copyright {
+    text-align: justify;
   }
 }
 
